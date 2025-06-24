@@ -4,7 +4,7 @@ import (
 	"github.com/gavinhailey/gograph"
 )
 
-// depthFirstIterator  is an implementation of the Iterator interface
+// depthFirstIterator is an implementation of the Iterator interface
 // for traversing a graph using a depth-first search (DFS) algorithm.
 type depthFirstIterator[T comparable] struct {
 	graph   gograph.Graph[T] // the graph being traversed.
