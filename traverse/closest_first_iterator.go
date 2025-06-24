@@ -1,8 +1,8 @@
 package traverse
 
 import (
-	"github.com/hmdsefi/gograph"
-	"github.com/hmdsefi/gograph/util"
+	"github.com/gavinhailey/gograph"
+	"github.com/gavinhailey/gograph/util"
 )
 
 // closestFirstIterator implements the Iterator interface to travers

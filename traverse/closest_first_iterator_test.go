@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/hmdsefi/gograph"
+	"github.com/gavinhailey/gograph"
 )
 
 func initClosestFirstIteratorTestGraph() gograph.Graph[string] {

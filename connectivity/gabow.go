@@ -1,6 +1,6 @@
 package connectivity
 
-import "github.com/hmdsefi/gograph"
+import "github.com/gavinhailey/gograph"
 
 // Gabow's Algorithm is a linear time algorithm to find strongly connected
 // components in a directed graph. It is similar to Tarjan's Algorithm in

@@ -5,7 +5,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/hmdsefi/gograph"
+	"github.com/gavinhailey/gograph"
 )
 
 func TestGabow(t *testing.T) {

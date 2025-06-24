@@ -1,6 +1,6 @@
 package connectivity
 
-import "github.com/hmdsefi/gograph"
+import "github.com/gavinhailey/gograph"
 
 // Kosaraju's Algorithm: This algorithm is also based on depth-first search
 // and is used to find strongly connected components in a graph. The algorithm

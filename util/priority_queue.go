@@ -3,7 +3,7 @@ package util
 import (
 	"container/heap"
 
-	"github.com/hmdsefi/gograph"
+	"github.com/gavinhailey/gograph"
 )
 
 // VertexPriorityQueue wraps the priorityQueue type to decrease the

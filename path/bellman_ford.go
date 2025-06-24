@@ -4,7 +4,7 @@ import (
 	"errors"
 	"math"
 
-	"github.com/hmdsefi/gograph"
+	"github.com/gavinhailey/gograph"
 )
 
 var (

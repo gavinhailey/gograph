@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"math/big"
 
-	"github.com/hmdsefi/gograph"
+	"github.com/gavinhailey/gograph"
 )
 
 // randomWalkIterator implements the Iterator interface to travers

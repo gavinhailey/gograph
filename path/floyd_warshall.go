@@ -3,7 +3,7 @@ package path
 import (
 	"math"
 
-	"github.com/hmdsefi/gograph"
+	"github.com/gavinhailey/gograph"
 )
 
 // FloydWarshall finds the shortest paths between all pairs of vertices in a

@@ -1,7 +1,7 @@
 package traverse
 
 import (
-	"github.com/hmdsefi/gograph"
+	"github.com/gavinhailey/gograph"
 )
 
 // Iterator represents a general purpose iterator for iterating over

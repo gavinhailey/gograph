@@ -3,7 +3,7 @@ package path
 import (
 	"testing"
 
-	"github.com/hmdsefi/gograph"
+	"github.com/gavinhailey/gograph"
 )
 
 func TestDijkstraSimple(t *testing.T) {

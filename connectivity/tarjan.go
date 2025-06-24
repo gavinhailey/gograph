@@ -1,6 +1,6 @@
 package connectivity
 
-import "github.com/hmdsefi/gograph"
+import "github.com/gavinhailey/gograph"
 
 // Tarjan's algorithm is based on depth-first search and is widely used for
 // finding strongly connected components in a graph. The algorithm is efficient

@@ -3,8 +3,8 @@ package path
 import (
 	"math"
 
-	"github.com/hmdsefi/gograph"
-	"github.com/hmdsefi/gograph/util"
+	"github.com/gavinhailey/gograph"
+	"github.com/gavinhailey/gograph/util"
 )
 
 // DijkstraSimple is a simple implementation of Dijkstra's algorithm. It's using

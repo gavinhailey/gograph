@@ -1,7 +1,7 @@
 package traverse
 
 import (
-	"github.com/hmdsefi/gograph"
+	"github.com/gavinhailey/gograph"
 )
 
 // breadthFirstIterator is an implementation of the Iterator interface

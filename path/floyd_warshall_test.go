@@ -5,7 +5,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/hmdsefi/gograph"
+	"github.com/gavinhailey/gograph"
 )
 
 func TestFloydWarshall(t *testing.T) {
