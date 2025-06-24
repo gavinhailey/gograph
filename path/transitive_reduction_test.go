@@ -17,9 +17,9 @@ func TestTransitiveReduction_Simple(t *testing.T) {
 	vC := g.AddVertexByLabel("C")
 
 	// Add edges A->B, B->C, A->C (A->C is the transitive edge that should be removed)
-	g.AddEdge(vA, vB)
-	g.AddEdge(vB, vC)
-	g.AddEdge(vA, vC)
+	_, _ = g.AddEdge(vA, vB)
+	_, _ = g.AddEdge(vB, vC)
+	_, _ = g.AddEdge(vA, vC)
 
 	// Compute transitive reduction
 	reduced, err := TransitiveReduction(g)
@@ -66,12 +66,12 @@ func TestTransitiveReduction_Complex(t *testing.T) {
 	// A->B, B->C, C->D
 	// A->C, B->D, A->D (these should be reduced)
 	// E (isolated vertex)
-	g.AddEdge(vA, vB)
-	g.AddEdge(vB, vC)
-	g.AddEdge(vC, vD)
-	g.AddEdge(vA, vC) // This should be removed (A->B->C)
-	g.AddEdge(vB, vD) // This should be removed (B->C->D)
-	g.AddEdge(vA, vD) // This should be removed (A->B->C->D)
+	_, _ = g.AddEdge(vA, vB)
+	_, _ = g.AddEdge(vB, vC)
+	_, _ = g.AddEdge(vC, vD)
+	_, _ = g.AddEdge(vA, vC) // This should be removed (A->B->C)
+	_, _ = g.AddEdge(vB, vD) // This should be removed (B->C->D)
+	_, _ = g.AddEdge(vA, vD) // This should be removed (A->B->C->D)
 
 	// Compute transitive reduction
 	reduced, err := TransitiveReduction(g)
@@ -125,10 +125,10 @@ func TestTransitiveReduction_Diamond(t *testing.T) {
 
 	// Add edges - Diamond pattern
 	// A->B, A->C, B->D, C->D
-	g.AddEdge(vA, vB)
-	g.AddEdge(vA, vC)
-	g.AddEdge(vB, vD)
-	g.AddEdge(vC, vD)
+	_, _ = g.AddEdge(vA, vB)
+	_, _ = g.AddEdge(vA, vC)
+	_, _ = g.AddEdge(vB, vD)
+	_, _ = g.AddEdge(vC, vD)
 
 	// Compute transitive reduction
 	// In this case, all edges should remain since there are no transitive edges
@@ -176,9 +176,9 @@ func TestTransitiveReduction_WeightPreservation(t *testing.T) {
 
 	// Add weighted edges
 	// A->B (weight 1), B->C (weight 2), A->C (weight 10) - A->C should be removed
-	g.AddEdge(vA, vB, gograph.WithEdgeWeight(1.0))
-	g.AddEdge(vB, vC, gograph.WithEdgeWeight(2.0))
-	g.AddEdge(vA, vC, gograph.WithEdgeWeight(10.0))
+	_, _ = g.AddEdge(vA, vB, gograph.WithEdgeWeight(1.0))
+	_, _ = g.AddEdge(vB, vC, gograph.WithEdgeWeight(2.0))
+	_, _ = g.AddEdge(vA, vC, gograph.WithEdgeWeight(10.0))
 
 	// Compute transitive reduction
 	reduced, err := TransitiveReduction(g)
@@ -231,9 +231,9 @@ func TestTransitiveReduction_ErrorCases(t *testing.T) {
 	vB := cyclicGraph.AddVertexByLabel("B")
 	vC := cyclicGraph.AddVertexByLabel("C")
 
-	cyclicGraph.AddEdge(vA, vB)
-	cyclicGraph.AddEdge(vB, vC)
-	cyclicGraph.AddEdge(vC, vA) // Creates a cycle
+	_, _ = cyclicGraph.AddEdge(vA, vB)
+	_, _ = cyclicGraph.AddEdge(vB, vC)
+	_, _ = cyclicGraph.AddEdge(vC, vA) // Creates a cycle
 
 	_, err = TransitiveReduction(cyclicGraph)
 	if err == nil {
