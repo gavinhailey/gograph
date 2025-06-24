@@ -71,8 +71,8 @@ and path your graph to it:
 
 ```go
 import (
-  "github.com/hmdsefi/gograph"
-  "github.com/hmdsefi/gograph/connectivity"
+  "github.com/gavinhailey/gograph"
+  "github.com/gavinhailey/gograph/connectivity"
 )
 
 func main() {
@@ -117,8 +117,8 @@ and path your graph to it:
 
 ```go
 import (
-  "github.com/hmdsefi/gograph"
-  "github.com/hmdsefi/gograph/connectivity"
+  "github.com/gavinhailey/gograph"
+  "github.com/gavinhailey/gograph/connectivity"
 )
 
 func main() {
@@ -162,8 +162,8 @@ and path your graph to it:
 
 ```go
 import (
-  "github.com/hmdsefi/gograph"
-  "github.com/hmdsefi/gograph/connectivity"
+  "github.com/gavinhailey/gograph"
+  "github.com/gavinhailey/gograph/connectivity"
 )
 
 func main() {

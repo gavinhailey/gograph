@@ -17,27 +17,26 @@ educational purposes and practical applications.</p>
 
 ## Table of Contents
 
-* [Install](#Install)
-* [How to Use](#How-to-Use)
-    * [Graph](#Graph)
-        * [Directed](#Directed)
-        * [Acyclic](#Acyclic)
-        * [Undirected](#Undirected)
-        * [Weighted](#Weighted)
-    * [Traverse](#Traverse)
-    * [Connectivity](https://github.com/hmdsefi/gograph/tree/master/connectivity#gograph---connectivity)
-    * [Shortest Path]()
-        * [Dijkstra](https://github.com/hmdsefi/gograph/blob/master/path/dijkstra.md)
-        * [Bellman-Ford](https://github.com/hmdsefi/gograph/blob/master/path/bellman-ford.md)
-        * [Floyd-Warshall](https://github.com/hmdsefi/gograph/blob/master/path/floyd-warshall.md)
-* [License](#License)
+<!-- TOC -->
+* [gograph](#gograph)
+  * [Table of Contents](#table-of-contents)
+  * [Install](#install)
+  * [How to Use](#how-to-use)
+    * [Graph](#graph)
+      * [Directed](#directed)
+      * [Acyclic](#acyclic)
+      * [Undirected](#undirected)
+      * [Weighted](#weighted)
+    * [Traverse](#traverse)
+  * [License](#license)
+<!-- TOC -->
 
 ## Install
 
 Use `go get` command to get the latest version of the `gograph`:
 
 ```shell
-go get github.com/hmdsefi/gograph
+go get github.com/gavinhailey/gograph
 ```
 
 Then you can use import the `gograph` to your code:
@@ -45,7 +44,7 @@ Then you can use import the `gograph` to your code:
 ```go
 package main
 
-import "github.com/hmdsefi/gograph"
+import "github.com/gavinhailey/gograph"
 ```
 
 ## How to Use
@@ -168,12 +167,12 @@ type Iterator[T comparable] interface {
 
 This package contains the following iterators:
 
-- [Breadth-First iterator](https://github.com/hmdsefi/gograph/tree/master/traverse#BFS)
-- [Depth-First iterator](https://github.com/hmdsefi/gograph/tree/master/traverse#DFS)
-- [Topological iterator](https://github.com/hmdsefi/gograph/tree/master/traverse#Topological-Sort)
-- [Closest-First iterator](https://github.com/hmdsefi/gograph/tree/master/traverse#Closest-First)
-- [Random Walk iterator](https://github.com/hmdsefi/gograph/tree/master/traverse#random-walk)
+- [Breadth-First iterator](https://github.com/gavinhailey/gograph/tree/master/traverse#BFS)
+- [Depth-First iterator](https://github.com/gavinhailey/gograph/tree/master/traverse#DFS)
+- [Topological iterator](https://github.com/gavinhailey/gograph/tree/master/traverse#Topological-Sort)
+- [Closest-First iterator](https://github.com/gavinhailey/gograph/tree/master/traverse#Closest-First)
+- [Random Walk iterator](https://github.com/gavinhailey/gograph/tree/master/traverse#random-walk)
 
 ## License
 
-Apache License, please see [LICENSE](https://github.com/hmdsefi/gograph/blob/master/LICENSE) for details.
+Apache License, please see [LICENSE](https://github.com/gavinhailey/gograph/blob/master/LICENSE) for details.
